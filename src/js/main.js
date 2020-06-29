@@ -44,3 +44,4 @@ if (reload == 0) {
   // обновляем страницу
   window.location.reload();
 }
+getCookie();
