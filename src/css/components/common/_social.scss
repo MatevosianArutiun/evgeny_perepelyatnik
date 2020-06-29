@@ -1,0 +1,22 @@
+.social {
+  &__list {
+    @include flex(space-between, center, row);
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    width: 24px;
+    height: 26px;
+    transition: all 0.3s linear;
+    transform: scale(0.8, 0.8);
+    &:hover {
+      transform: scale(1, 1);
+      fill: $blue;
+    }
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}

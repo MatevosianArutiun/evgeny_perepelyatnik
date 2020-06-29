@@ -1,0 +1,22 @@
+.button {
+  letter-spacing: 3px;
+  width: 230px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: inline-block;
+  @include text($H100, 900, $white);
+  font-family: $button-font;
+  transition: all 0.3s linear;
+  background-color: $darken;
+  @media screen and (min-width: $screen-iphone) {
+    padding: 25px 30px;
+  }
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+  &:active {
+    transform: scaleX(0.97) translateY(1px);
+  }
+}

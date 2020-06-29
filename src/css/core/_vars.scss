@@ -1,0 +1,41 @@
+// Colors
+$white: #ffffff;
+$dark: #2b2b2b;
+$darken: #3f3f3f;
+
+$gray: #a4a4a4;
+$blue: #0495ca;
+
+// Fonts
+$main-font: "Heebo", sans-serif;
+$text-font: "Montserrat", sans-serif;
+$italic-font: "Playball", cursive;
+$button-font: "Josefin Sans", sans-serif;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H900: calcRem(90px);
+$H800: calcRem(60px);
+$H700: calcRem(45px);
+$H600: calcRem(30px);
+$H500: calcRem(24px);
+$H400: calcRem(22px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(14px);
+$H10: calcRem(12px);
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet-small: 500px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

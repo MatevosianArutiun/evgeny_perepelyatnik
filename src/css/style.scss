@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;900&family=Josefin+Sans:wght@400;600;700&family=Montserrat:wght@400;700&family=Playball&display=swap");
+// // Core
+@import "./core/vars";
+@import "./core/mixins";
+@import "./core/common";
+
+// // Common components
+@import "./components/common/button";
+// @import './components/common/form';
+@import "./components/common/loader";
+@import "./components/common/navigation";
+@import "./components/common/logo";
+@import "./components/common/menu";
+@import "./components/common/social";
+// @import './components/common/button-up';
+
+// // Components
+@import "./components/header";
+// @import './components/section-about';
+// @import './components/section-reservation';
+// @import './components/section-spain';
+// @import './components/section-comment';
+// @import './components/footer';

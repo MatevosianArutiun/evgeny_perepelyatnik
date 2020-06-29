@@ -1,0 +1,57 @@
+.loader {
+  @include flex(center, center, column);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  animation-delay: 1s;
+  background-color: $white;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  // display: none;
+  &--noactive {
+    display: none;
+  }
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    background: #f583a1;
+    border-radius: 50%;
+    background-color: $blue;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $blue;
+      opacity: 0.7;
+      animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+      animation-delay: 200ms;
+      transition: 0.5s all ease;
+      transform: scale(1);
+    }
+
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50%,
+      75% {
+        transform: scale(2.5);
+      }
+      78%,
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}

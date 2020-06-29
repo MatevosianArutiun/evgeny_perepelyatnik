@@ -1,0 +1,65 @@
+.header {
+  height: 100vh;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+  background-attachment: scroll;
+  &__container {
+    padding-top: 100px;
+    height: 100%;
+    @include flex(center, flex-start, column);
+  }
+  &__subtitle {
+    @include text($H700, 900, $dark);
+    font-family: $italic-font;
+    letter-spacing: 4px;
+  }
+  &__title {
+    @include text($H800, 900, $dark);
+    font-family: $main-font;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    &--blue {
+      color: $blue;
+      animation: textAnimation 4s linear infinite;
+
+      @keyframes textAnimation {
+        0% {
+          opacity: 1;
+        }
+        8% {
+          opacity: 0.9;
+        }
+        17% {
+          opacity: 0.8;
+        }
+        25% {
+          opacity: 0.7;
+        }
+        50% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__text {
+    @include text($H600, 400, $darken);
+    font-family: $text-font;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+  }
+  &__button:not(:last-child) {
+    margin-right: 30px;
+    background: $blue;
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
