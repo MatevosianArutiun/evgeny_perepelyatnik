@@ -3,13 +3,13 @@
 import { showLoading } from "./scripts/preloader";
 import { changeTitle } from "./scripts/title";
 
-function apnut_tolko_1_raz() {
+function reset() {
   if (!window.location.hash) {
-    window.location = window.location + "#uge_obnovleno";
+    window.location = window.location + "#reset";
     window.location.reload();
   }
 }
-setTimeout("apnut_tolko_1_raz()", 1599);
+setTimeout("reset()", 1599);
 
 showLoading();
 changeTitle();
