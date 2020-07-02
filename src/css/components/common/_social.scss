@@ -2,6 +2,7 @@
   &__list {
     @include flex(space-between, center, row);
   }
+
   &__item:not(:last-child) {
     margin-right: 50px;
   }

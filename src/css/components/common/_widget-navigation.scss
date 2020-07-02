@@ -1,0 +1,20 @@
+.widget-navigation {
+  position: fixed;
+  right: 3%;
+  top: 30%;
+
+  &__btn {
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid $darken;
+    border-radius: 50%;
+    background-color: $darken;
+  }
+  &__btn:not(:last-child) {
+    margin-bottom: 45px;
+  }
+  &__btn--active {
+    transition: all 0.3s linear;
+    transform: scale(2, 2);
+  }
+}

@@ -1,5 +1,5 @@
 export const changeTitle = () => {
-  let $headerTitle = document.querySelector("#header-title");
+  let $headerTitle = document.querySelector("#content-title");
 
   $headerTitle.textContent = "Evgeny Perepelyatnik";
   setTimeout(() => {

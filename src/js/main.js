@@ -2,15 +2,11 @@
 
 import { showLoading } from "./scripts/preloader";
 import { changeTitle } from "./scripts/title";
+import { changeWidgetNavigation } from "./scripts/widget-navigation";
 
-function reset() {
-  if (!window.location.hash) {
-    window.location = window.location + "#reset";
-    window.location.reload();
-  }
-}
-setTimeout("reset()", 1599);
-
-showLoading();
-changeTitle();
-setInterval(changeTitle, 12000);
+document.addEventListener("DOMContentLoaded", () => {
+  showLoading();
+  changeTitle();
+  setInterval(changeTitle, 12000);
+  changeWidgetNavigation();
+});
