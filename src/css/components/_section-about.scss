@@ -1,0 +1,47 @@
+.section-about {
+  height: 100vh;
+  background-image: url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+  background-attachment: fixed;
+  &__container {
+    padding-top: 100px;
+    height: 100%;
+    @include flex(center, center, row);
+  }
+  &__content {
+    margin-right: 200px;
+  }
+  &__subtitle {
+    @include text($H700, 900, $white);
+  }
+  &__title {
+    @include text($H800, 900, $white);
+    margin-bottom: 0px;
+    &--blue {
+      color: $blue;
+    }
+  }
+  &__list {
+    @include flex(flex-start, center, row);
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    fill: $gray;
+  }
+  &__info {
+    max-width: 800px;
+  }
+  &__text {
+    @include text($H200, 400, $gray);
+    font-family: $text-font;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+  &__text:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

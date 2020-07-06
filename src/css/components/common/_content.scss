@@ -12,6 +12,7 @@
   }
   &__title--blue {
     color: $blue;
+
     animation: textAnimation 4s linear infinite;
 
     @keyframes textAnimation {
@@ -38,6 +39,7 @@
       }
     }
   }
+
   &__text {
     @include text($H600, 400, $darken);
     font-family: $text-font;

@@ -3,7 +3,7 @@ export const changeWidgetNavigation = () => {
   let $widgetNavigationBtn = document.querySelectorAll(
     ".widget-navigation__btn"
   );
-  console.log($widgetNavigationBtn);
+
   $widgetNavigation.addEventListener("click", function (event) {
     let target = event.target;
     if (target.className !== "widget-navigation__btn") return;

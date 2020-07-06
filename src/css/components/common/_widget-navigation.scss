@@ -1,7 +1,7 @@
 .widget-navigation {
   position: fixed;
   right: 3%;
-  top: 30%;
+  top: 35%;
 
   &__btn {
     cursor: pointer;
@@ -11,7 +11,7 @@
     background-color: $darken;
   }
   &__btn:not(:last-child) {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   &__btn--active {
     transition: all 0.3s linear;

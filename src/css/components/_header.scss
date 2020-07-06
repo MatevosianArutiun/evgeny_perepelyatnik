@@ -4,20 +4,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 20%;
-  background-attachment: scroll;
-  animation: BackgroundAnimation 50s linear infinite;
+  background-attachment: fixed;
+  animation: BackgroundAnimation 10s linear infinite;
 
   @keyframes BackgroundAnimation {
     0% {
       background-size: 100%;
     }
-    25% {
-      background-size: 110%;
-    }
     50% {
-      background-size: 100%;
-    }
-    75% {
       background-size: 110%;
     }
 
