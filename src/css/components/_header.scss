@@ -5,20 +5,20 @@
   background-size: cover;
   background-position: center 20%;
   background-attachment: fixed;
-  animation: BackgroundAnimation 10s linear infinite;
+  // animation: BackgroundAnimation 10s linear infinite;
 
-  @keyframes BackgroundAnimation {
-    0% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 110%;
-    }
+  // @keyframes BackgroundAnimation {
+  //   0% {
+  //     background-size: 100%;
+  //   }
+  //   50% {
+  //     background-size: 110%;
+  //   }
 
-    100% {
-      background-size: 100%;
-    }
-  }
+  //   100% {
+  //     background-size: 100%;
+  //   }
+  // }
   &__container {
     padding-top: 100px;
     height: 100%;
