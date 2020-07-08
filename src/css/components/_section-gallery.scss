@@ -1,4 +1,5 @@
 .section-gallery {
+  background-color: $darken-grey;
   min-height: 100vh;
   @include flex(flex-start, center, column);
 
