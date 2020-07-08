@@ -43,7 +43,7 @@
   &__text {
     @include text($H600, 400, $darken);
     font-family: $text-font;
-    letter-spacing: 2px;
+
     margin-bottom: 70px;
   }
   &__button:not(:last-child) {

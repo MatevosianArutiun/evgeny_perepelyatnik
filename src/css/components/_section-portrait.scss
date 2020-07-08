@@ -1,0 +1,29 @@
+.section-portrait {
+  height: 100vh;
+  background-image: url(../images/bg-portrait.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+  background-attachment: fixed;
+
+  &__container {
+    height: 100%;
+    @include flex(center, flex-end, column);
+  }
+  &__content {
+    max-width: 600px;
+  }
+  &__subtitle {
+    @include text($H700, 400, $white);
+  }
+  &__title {
+    @include text($H800, 900, $white);
+  }
+  &__text {
+    @include text($H300, 400, $gray);
+    line-height: 2;
+  }
+  &__button {
+    background-color: $blue;
+  }
+}

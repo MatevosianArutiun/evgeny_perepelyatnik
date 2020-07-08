@@ -1,0 +1,20 @@
+.section-imagery {
+  height: 100vh;
+  background-image: url(../images/bg-imagery.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 20%;
+  background-attachment: fixed;
+  &__container {
+    height: 100%;
+    @include flex(center, flex-start, column);
+  }
+  &__content {
+    max-width: 600px;
+    z-index: 2;
+  }
+  &__text {
+    @include text($H300, 700, $darken);
+    line-height: 2;
+  }
+}
