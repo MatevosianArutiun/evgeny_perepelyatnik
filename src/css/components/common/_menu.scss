@@ -1,8 +1,8 @@
 .menu {
-  border-right: 1px solid $gray;
-  border-left: 1px solid $gray;
-  padding-right: 100px;
-  padding-left: 100px;
+  // border-right: 1px solid $gray;
+  // border-left: 1px solid $gray;
+  // padding-right: 50px;
+  // padding-left: 50px;
   line-height: 2;
   &__list {
     @include flex(space-between, center, row);
@@ -13,7 +13,7 @@
   }
   &__link {
     padding: 7px 0 7px 0;
-    @include text($H50, 900, $darken);
+    @include text($H10, 900, $darken);
     font-family: $main-font;
     text-transform: uppercase;
     letter-spacing: 2px;

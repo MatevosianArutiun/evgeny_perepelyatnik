@@ -36,7 +36,7 @@
     max-width: 800px;
   }
   &__text {
-    @include text($H300, 400, $gray);
+    @include text($H200, 400, $gray);
     font-family: $text-font;
     letter-spacing: 2px;
     line-height: 1.6;

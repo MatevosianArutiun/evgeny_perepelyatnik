@@ -8,8 +8,10 @@
     margin-right: 10px;
   }
   &__title {
+    border-right: 1px solid $gray;
+    padding-right: 20px;
     text-align: center;
-    @include text($H300, 900, $darken);
+    @include text($H200, 900, $darken);
     font-family: $main-font;
     text-transform: uppercase;
     letter-spacing: 5px;

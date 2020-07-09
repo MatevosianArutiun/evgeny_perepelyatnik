@@ -1,11 +1,11 @@
 .content {
   &__subtitle {
-    @include text($H700, 900, $dark);
+    @include text($H700, 700, $dark);
     font-family: $italic-font;
     letter-spacing: 4px;
   }
   &__title {
-    @include text($H800, 900, $dark);
+    @include text($H800, 400, $dark);
     font-family: $main-font;
     letter-spacing: 3px;
     margin-bottom: 30px;
@@ -41,7 +41,7 @@
   }
 
   &__text {
-    @include text($H600, 400, $darken);
+    @include text($H500, 400, $darken);
     font-family: $text-font;
 
     margin-bottom: 70px;

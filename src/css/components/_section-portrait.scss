@@ -20,7 +20,7 @@
     @include text($H800, 900, $white);
   }
   &__text {
-    @include text($H300, 400, $gray);
+    @include text($H200, 400, $gray);
     line-height: 2;
   }
   &__button {
