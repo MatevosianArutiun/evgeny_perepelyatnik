@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // let el = document.querySelector(".navigation");
 // let el1 = document.querySelector(".section-about");
-// window.addEventListener("scroll", toggleClassOnScroll.bind(el, 2));
+// window.addEventListener("scroll", toggleClassOnScroll.bind(el, 1));
 
 // function toggleClassOnScroll(pxAmount) {
 //   let scrollTop =
@@ -55,3 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
 //     this.classList.remove("navigation--active");
 //   }
 // }
+var myFullpage = new fullpage("#fullpage", {
+  navigation: true,
+
+  loopBottom: true,
+  parallax: true,
+});

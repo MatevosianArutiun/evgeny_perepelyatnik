@@ -4,23 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/fullpage.css" />
     <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Evgeny Perepelyatnik</title>
   </head>
   <body>
     //= templates/loader.html
-    //= templates/widget-navigation.html
-    //= templates/navigation.html
-    //= templates/header.html
+    <!-- //= templates/widget-navigation.html -->
+    
+    
   <main id="main" class="main">
-    //= templates/about.html
-    //= templates/gallery.html
-    //= templates/portrait.html
-    //= templates/imagery.html
+    <div id="fullpage">
+      //= templates/navigation.html
+      //= templates/header.html
+      //= templates/about.html
+      //= templates/gallery.html
+      //= templates/portrait.html
+      //= templates/imagery.html
+    </div>
+    
 
   </main>
+    
+
+  
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="js/fullpage.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
